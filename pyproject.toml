@@ -1,29 +1,28 @@
 [project]
 name = "act-plus-plus"
 version = "0.1.0"
-description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.12"
 dependencies = [
-    "diffusers>=0.33.1",
+    "diffusers>=0.29.0",
     "dm-control==1.0.14",
-    "einops>=0.8.1",
-    "h5py>=3.13.0",
-    "ipython>=9.3.0",
-    "matplotlib>=3.10.3",
+    "einops",
+    "h5py",
+    "ipython",
+    "matplotlib",
     "mujoco==2.3.7",
-    "opencv-python>=4.11.0.86",
-    "packaging>=25.0",
-    "pexpect>=4.9.0",
-    "pyqt6>=6.9.0",
-    "pyquaternion>=0.9.9",
-    "pyyaml>=6.0.2",
+    "numpy",
+    "opencv-python",
+    "packaging",
+    "pandas",
+    "pyqt6",
+    "pyquaternion",
     "robomimic",
-    "rospkg>=1.6.0",
+    "seaborn",
+    "torch",
     "torchvision>=0.22.0",
-    "wandb>=0.20.0",
+    "wandb",
 ]
 
 [tool.uv.sources]
-#detr = { git = "https://github.com/ncihnegn/act-plus-plus", subdirectory = "detr" }
-robomimic = { git = "https://github.com/ARISE-Initiative/robomimic", branch = "diffusion-policy-mg" }
+robomimic = { git = "https://github.com/ncihnegn/robomimic", branch = "r2d2" }
